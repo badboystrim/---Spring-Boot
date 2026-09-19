@@ -15,12 +15,10 @@ import java.util.Collection;
 public class ShopController {
     private final StorageService storageService;
     private final SearchService searchService;
-
     public ShopController(StorageService storageService, SearchService searchService) {
         this.storageService = storageService;
         this.searchService = searchService;
     }
-
     @GetMapping("/products")
     public Collection<Product> getAllProducts() {
         return storageService.getAllProducts();

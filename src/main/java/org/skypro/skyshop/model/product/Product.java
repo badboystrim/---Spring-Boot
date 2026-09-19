@@ -19,7 +19,6 @@ public abstract class Product implements Searchable {
         this.id = id;
         this.name = name;
     }
-
     @Override
     public UUID getId() {
         return id;
