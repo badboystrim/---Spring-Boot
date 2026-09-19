@@ -9,7 +9,6 @@ public class Article implements Searchable {
     private final UUID id;
     private final String title;
     private final String text;
-
     public Article(UUID id, String title, String text) {
         if (id == null) {
             throw new IllegalArgumentException("Идентификатор не может быть null");
@@ -24,7 +23,6 @@ public class Article implements Searchable {
         this.title = title;
         this.text = text;
     }
-
     @Override
     public UUID getId() {
         return id;
