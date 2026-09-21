@@ -59,4 +59,7 @@ public class StorageService {
         allSearchable.addAll(articles.values());
         return allSearchable;
     }
+    public java.util.Optional<Product> getProductById(UUID id) {
+        return java.util.Optional.ofNullable(products.get(id));
+    }
 }
